@@ -2,8 +2,6 @@
 
 {% set pageId = "page-home" %}
 
-<title>Ecoleta</title>
-
 <link rel="stylesheet" href="styles/home.css">
 <link rel="stylesheet" href="styles/modal.css">
 
@@ -11,6 +9,10 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/modal.css">
 {% endblock styles %}
+
+{% block title %}
+    <title>Ecoleta</title>
+{% endblock title %}
 
 {% block content %}
     <div class="content">
@@ -26,7 +28,7 @@
 
         <main>
 
-            <h1>{{ title }}</h1>
+            <h1>Seu marketplace de coleta de resíduos</h1>
 
             <p>Ajudamos pessoas a encontrarem pontos de coleta de modo eficiente.</p>
 

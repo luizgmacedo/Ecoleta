@@ -1,50 +1,172 @@
 @media (max-width: 900px) {
-    #page-home {
-        background-position-x: 70vw;
+    #page-home{
+        background-position: 70vw;
     }
 
     #page-home .content {
         align-items: center;
-        text-align: center;
+        text-align: center
     }
 
-    #page-home header a {
+    #page-home header a.side-button{
         position: absolute;
-        bottom: 48px;
-
         left: 50%;
         transform: translateX(-50%);
     }
 
     #page-home main {
         align-items: center;
+        margin-bottom: 128px;
     }
 
     #page-search-results .cards {
         grid-template-columns: 1fr;
     }
 
-    #page-search-results .cards img {
-        height: 200px;
+    #page-serch-results .cards img {
+        height: 250px;
     }
 
     #page-create-point .field-group {
         flex-direction: column;
-    }
+    } 
 
     #page-create-point .field-group .field + .field {
-        margin-left: 0;
+        margin-left: 0px;
+    }
+
+    .items-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-height: 500px) {
+        #page-home header a.side-button{
+            bottom: 2rem;
+        }
+    }
+    @media (max-height: 500px){
+        #page-home header a.side-button{
+            top: 28rem;
+            padding-bottom: 0.8rem;
+        }
+
     }
 }
 
 @media (min-width: 1700px) {
     #page-home {
-        background-position-x: 40vw;
+        background-position: 40vw;
     }
 }
 
 @media (max-height: 760px) {
     #page-home {
         background-position-y: 200px;
+    }
+}
+
+@media (max-width: 560px){
+    #page-create-point #logo-box,
+    #page-search-results #logo-box {
+        flex-direction: column;
+    }
+
+
+    #page-home main {
+        padding: 40px 0;
+    }
+
+    #page-home main h1 {
+        font-size: 48px;
+    }
+
+    #page-home main p {
+        font-size: 18px;
+    }
+
+    @media (max-height: 500px){
+    
+        #modal form input{
+            padding: 16px 8px;
+            /* width: 40px; */
+        }
+    }
+
+    @media (min-height: 550px) {
+        #page-home header a.side-button{
+            bottom: 2rem;
+        }
+    }
+    @media (max-height: 550px){
+        #page-home header a.side-button{
+            top: 30rem;
+            padding-bottom: 0.8rem;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    #page-home main h1 {
+        font-size: 36px;
+    }
+
+    #page-home main p {
+        font-size: 18px;
+    }
+}
+
+
+
+@media (max-width: 480px){
+    form legend h2,
+    form .field-group{
+        max-width: 80%;
+    }
+
+    .items-grid {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media (max-width: 385px){
+    
+    #modal .content {
+        max-width: 300px;
+    }
+
+    form legend h2,
+    form .field-group{
+        max-width: 60%;
+    }
+
+    @media (min-height: 550px) {
+        #page-home header a.side-button{
+            bottom: 2rem;
+        }
+    }
+    @media (max-height: 550px){
+        #page-home header a.side-button{
+            top: 32rem;
+            padding-bottom: 0.8rem;
+        }
+    }
+}
+
+@media (max-width: 330px){
+    #logo-box p {
+        font-size: 16px;
+    }
+
+    @media (min-height: 600px) {
+        #page-home header a.side-button{
+            bottom: 2rem;
+        }
+    }
+    @media (max-height: 600px){
+        #page-home header a.side-button{
+            top: 34rem;
+            padding-bottom: 0.8rem;
+        }
     }
 }
